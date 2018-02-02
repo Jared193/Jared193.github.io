@@ -1,1 +1,66 @@
-
+body {
+	background-color: black;
+	text-align: center;
+	font-family: "Ubuntu", sans-serif;
+}
+h1 {
+	font-size: 4em;
+	text-shadow: 2px 2px #7f7f7f;
+	color: white;
+	background-color: clear;
+}
+p {
+	color: white;
+}
+a {
+	text-decoration: none;
+	color: #0043ff;
+	list-style-type: none;	
+	display: inline;
+    padding-right: 8px;
+    padding-left: 8px;
+}
+a:hover {
+	color: #002796;
+}
+a:active {
+	color: #001759
+}
+.topRight {
+	padding: 15px 20px;
+	background-color: #0034d3;
+	border: none;
+	border-radius: 15px;
+	box-shadow: 0 9px #7f7f7f;
+	outline: none;
+	position: absolute; 	
+	top: 0; 	
+	right: 0%;
+}
+.topRight:hover {
+	background-color: #002391;
+}
+.topRight:active {
+	background-color: #001a68;
+	transform: translateY(4px);
+	box-shadow: 0 5px #7f7f7f;
+}
+.topRight2 {
+	padding: 15px 20px;
+	background-color: #0034d3;
+	border: none;
+	border-radius: 15px;
+	box-shadow: 0 9px #7f7f7f;
+	outline: none;
+	position: absolute; 	
+	top: 0; 	
+	right: 8%;
+}
+.topRight2:hover {
+	background-color: #002391;
+}
+.topRight2:active {
+	background-color: #001a68;
+	transform: translateY(4px);
+	box-shadow: 0 5px #7f7f7f;
+}
