@@ -21,6 +21,9 @@
     else {
       echo "Successful Contection";
     }
+    
+    //Closes connection to database
+    $databse->close;
   ?>
   <div class="container-fluid">
     <div class="row">
