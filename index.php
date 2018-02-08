@@ -8,12 +8,24 @@
   </head>
   <body>
   <?php
-  
+    //Placeholder values
+    $servername = 'localhost';
+    $user = 'root';
+    $password = 'admin';
+    //Connect to mySQL database
+    $database = mysqli($servername, $user, $password);
+    //Checks if connection is valid
+    if ($database->connect_error) {
+      die("Connection to database failed" . $database->connect_error); 
+    }
+    else {
+      echo "Successful Contection";
+    }
   ?>
   <div class="container-fluid">
     <div class="row">
       <div class="col-xs-9">
-      
+       
       </div>
       <div class="col-xs-3">
       
