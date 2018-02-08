@@ -12,18 +12,26 @@
     $servername = 'localhost';
     $user = 'root';
     $password = 'admin';
-    //Connect to mySQL database
-    $database = mysqli($servername, $user, $password);
+    //Connect to mySQL server
+    $conn = mysqli($servername, $user, $password);
     //Checks if connection is valid
-    if ($database->connect_error) {
+    if ($conn->connect_error) {
       die("Connection to database failed" . $database->connect_error); 
     }
     else {
       echo "Successful Contection";
     }
-    
-    //Closes connection to database
-    $databse->close;
+    //Creates DB
+    $createDB = "CREATE DATABASE myDB";
+    //Checks if DB was succesfully created
+    if ($conn->query($createDB) == TRUE) {
+      echo "Databse Successfully Created"; 
+    }
+    else {
+      echo "Error" . $conn->error; 
+    }
+    //Closes connection to server
+    $conn->close;
   ?>
   <div class="container-fluid">
     <div class="row">
